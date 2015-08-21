@@ -5,18 +5,18 @@ This is an interface to boost regex originally developed by carn
 
 it has been slightly modified to properly compile on linux platforms
 
-##64bit instructions
+##64bit instructions (Ubuntu 15.04)
 
     Packages required to build (debian/ubuntu platforms) (assumes 64 bit)
     #gcc multilib
     sudo apt-get install gcc-4.9-multilib g++-4.9-multilib
     #lib boost regex
     dpkg --add-architecture i386
-    sudo apt-get install libboostregex-dev:i386
+    sudo apt-get install libboost-regex-dev:i386
 
-##32 bit
+##32 bit instructions (Ubuntu 15.04)
     
-    sudo apt-get install libboostregex-dev
+    sudo apt-get install libboost-regex-dev
 
 ##Compilation and testing
 Then simply invoke make to build the shared library - Please note that it always builds a 32 bit lib, as byond doesn't support 64 bit libraries
